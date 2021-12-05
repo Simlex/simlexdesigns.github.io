@@ -1,0 +1,226 @@
+/*Big tablets to 1200px*/
+/*Media Queries for browsers with a width less or equal to 1140 px*/
+@media only screen and (max-width: 1200px) {
+    .header-text {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    
+    .social-contact {
+        padding: 0 160px;
+    }
+
+}
+
+/*Ipads in portrait mode -> 768px to 1023px px*/
+/*Media Queries for ipads or browsers with a width less or equal to 1023px px*/
+@media only screen and (max-width: 1023px) { 
+    .header-text {
+        width: 100%;
+        font-size: 80%;
+        padding: 0 2%;
+    }
+
+    .header-boxes {
+        justify-items: flex-start;
+    }
+
+
+    /*
+    .header-content-text {
+        border: 1px solid;
+    }
+    */
+    
+    .header-content-text p {
+        font-size: 80%;
+    }
+
+    .project-details-inv {
+        margin: 0;
+
+
+    }
+
+    .project-display, 
+    .project-display-inv {
+        flex-direction: column-reverse;
+    }
+    
+    .project-details, 
+    .project-details-inv {
+
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    .project-details::after, 
+    .project-details-inv::after {
+        display: block;
+        height: 0.2px;
+        width: 70%;
+        background-color: #3b3b3b;
+        content: "";
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+
+    .project-details-inv:last-child {
+        margin-bottom: 5px;
+    }
+
+
+    .project-picture{
+        width: 400px;
+        height: 400px;
+    }
+
+    .social-contact {
+        margin: 0% auto;
+        margin-top: 50px;
+        height: 300px;
+        width: 60%;
+
+        
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .about-text {
+        width: 40%;
+    }
+    
+    .about-text p {
+        width: 100%;
+        font-size: 80%;
+    }
+
+    .about-image {
+        height: 300px;
+    }
+
+    .social-contact {
+        padding: 0 140px;
+    }
+
+    .testimonial-subgroup {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+/*Small phones to Small tablets - 480px to 767px px*/
+/*Media Queries for ipads or browsers with a width less or equal to 767px px*/
+@media only screen and (max-width: 767px) {
+    nav .nav-container ul {
+        display: none;
+    }
+
+    .dropdown {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header-details {
+        /*border: 1px solid ;*/
+        width: 86%;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+   
+    
+
+    .choice-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .choice-box {
+        width: 60%;
+        height: 324px;
+        margin-bottom: 30px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center; /*Not justify contents anymore since items are now on column direction*/
+    }
+
+    .social-contact {
+        margin: 0% auto;
+        margin-top: 50px;
+        height: 300px;
+        width: 60%;
+
+        
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .about-details {
+        flex-direction: column-reverse;
+    }
+
+    .about-text {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .footer-links {
+        width: 100%;
+        height: 80px;
+    
+        display: flex;
+    }
+    
+
+    .social-links {
+        width: 12%;
+    }
+
+    .social-links a img{
+        width: 40px;
+    }
+
+}
+
+/*Media Queries for small phones from 0 to 480px*/
+@media only screen and (max-width: 480px) { 
+
+    .header-text {
+        border: 1px solid;
+        width: 60%;
+    }
+
+    .header-details {
+        /*border: 1px solid ;*/
+        width: 86%;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    .header-details-content {
+        height: 350px;
+        float: left;
+        /*margin: auto 0; Remove this later then activate align item*/
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+
+    
+}
